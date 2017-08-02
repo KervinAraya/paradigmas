@@ -11,9 +11,10 @@ class Persona {
     private $personaCorreo;
     
     
-    public function __construct($personaId,$personaNombre,$personaApellido1,$personaApellido2,$personaTelefono,
+    
+    function persona($personaId,$personaNombre,$personaApellido1,$personaApellido2,$personaTelefono,
             $personaDireccion,$personaCorreo){
-        $this->personaId;
+        $this->personaId= $personaId;
         $this->personaNombre = $personaNombre;
         $this->personaApellido1 = $personaApellido1;
         $this->personaApellido2 = $personaApellido2;
@@ -21,6 +22,8 @@ class Persona {
         $this->personaDireccion = $personaDireccion;
         $this->personaCorreo = $personaCorreo;
  }
+ 
+ 
  }
             
     
