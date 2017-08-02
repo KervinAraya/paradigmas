@@ -21,13 +21,9 @@ class Persona {
         $this->personaTelefono = $personaTelefono;
         $this->personaDireccion = $personaDireccion;
         $this->personaCorreo = $personaCorreo;
- }
+    }
  
  
  }
-            
-    
-    
-
 
 ?>
