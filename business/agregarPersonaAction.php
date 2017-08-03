@@ -1,7 +1,7 @@
 <?php
     
     include_once '../dominio/Persona.php';
-    
+             
     $personaId = $_POST['personaId'];
     $personaNombre = $_POST['personaNombre'];
     $personaApellido1 = $_POST['personaApellido1'];
