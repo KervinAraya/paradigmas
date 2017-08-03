@@ -9,6 +9,7 @@ class Persona {
     private $personaTelefono;
     private $personaDireccion;
     private $personaCorreo;
+  
     
     
     
@@ -22,7 +23,7 @@ class Persona {
         $this->personaDireccion = $personaDireccion;
         $this->personaCorreo = $personaCorreo;
  }
- public function setPersonaId($personaId) {
+    public function setPersonaId($personaId) {
         $this->personaId = $personaId;
     }
     public function setPersonaNombre($personaNombre){
