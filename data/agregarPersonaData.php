@@ -1,1 +1,11 @@
-wnsmnd
+<?php
+    
+    class agregarPersonaData{
+        
+        
+        
+        
+        
+    }
+
+?>
