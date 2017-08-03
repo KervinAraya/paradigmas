@@ -9,6 +9,9 @@
     $personaTelefono = $_POST['personaTelefono'];
     $personaDirecccion = $_POST['personaDireccion'];
     $personaCorreo = $_POST['personaCorreo'];
+    $personaDescripcion= $_POST['personaDescripcion'];
+    $personaEstado= $_POST['personaEstado'];
+    $personaNombre= $_POST['personaNombre'];
     
     //Validacciones para ver si creo el objeto persona o no..(si no es vacio el espacio)
     
