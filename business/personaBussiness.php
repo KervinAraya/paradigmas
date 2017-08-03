@@ -18,8 +18,8 @@ class personaBusiness {
         return $this->personaData->actualizarPersona($persona);
     }
 
-    public function deleteTBPersona($personaCedula) {
-        return $this->personaData->eliminarPersona($personaCedula);
+    public function deleteTBPersona($personaId) {
+        return $this->personaData->eliminarPersona($personaId);
     }
 
     public function getAllTBPersona() {
