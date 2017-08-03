@@ -11,19 +11,19 @@ class personaBusiness {
     }
 
     public function insertTBPersona($persona) {
-        return $this->personaData->insertTBBull($persona);
+        return $this->personaData->insertarPersona($persona);
     }
 
     public function updateTBPersona($persona) {
-        return $this->personaData->updateTBBull($persona);
+        return $this->personaData->actualizarPersona($persona);
     }
 
     public function deleteTBPersona($personaCedula) {
-        return $this->personaData->deleteTBBull($personaCedula);
+        return $this->personaData->eliminarPersona($personaCedula);
     }
 
     public function getAllTBPersona() {
-        return $this->personaData->getAllTBPersona();
+        return $this->personaData->getTodasLasPersonas();
     }
     
 }
