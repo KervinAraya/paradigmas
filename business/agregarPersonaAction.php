@@ -15,7 +15,7 @@
     if(isset($personaId) && isset($personaNombre) && isset($personaApellido1) && isset($personaApellido2onaId) && isset($personaTelefono) && isset($personaDirecccion) && isset($personaCorreo)){
        $persona = new Persona($personaId, $personaNombre, $personaApellido1, $personaApellido2, $personaTelefono, $personaDireccion, $personaCorreo); 
     }else{
-        header("Location:../view/agregarPersonaView.php");
+        header("Location:../view/agregarPersonaView.php?Error=Archivos en blanco"); 
     }
     
     
