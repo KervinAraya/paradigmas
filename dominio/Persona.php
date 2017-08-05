@@ -9,12 +9,15 @@ class Persona {
     private $personaTelefono;
     private $personaDireccion;
     private $personaCorreo;
+    private $tipoPersonaEstado;
+    private $tipoPersonaNombre;
+    private $tipoPersonaDescripcion;
   
     
     
     
     function Persona($personaId,$personaNombre,$personaApellido1,$personaApellido2,$personaTelefono,
-            $personaDireccion,$personaCorreo){
+            $personaDireccion,$personaCorreo,$tipoPersonaEstado,$tipoPersonaNombre,$tipoPersonaDescripcion){
         $this->personaId= $personaId;
         $this->personaNombre = $personaNombre;
         $this->personaApellido1 = $personaApellido1;
@@ -22,6 +25,9 @@ class Persona {
         $this->personaTelefono = $personaTelefono;
         $this->personaDireccion = $personaDireccion;
         $this->personaCorreo = $personaCorreo;
+        $this->tipoPersonaEstado=$tipoPersonaEstado;
+        $this->tipoPersonaDescripcion=$tipoPersonaDescripcion;
+        $this->tipoPersonaNombre=$tipoPersonaNombre;
  }
     public function setPersonaId($personaId) {
         $this->personaId = $personaId;
@@ -50,6 +56,24 @@ class Persona {
         $this->personaCorreo = $personaCorreo;
     }
     
+     public function setTipoPersonaDescripcion($tipoPersonaDescripcion) {
+        $this->tipoPersonaDescripcion = $tipoPersonaDescripcion;
+    }
+    public function setTipoPersonaNombre($tipoEmpleadoNombre) {
+        $this->tipoPersonaNombre = $tipoEmpleadoNombre;
+    }
+    public function setTipoPersonaEstado($tipoPersonaEstado) {
+        $this->tipoPersonaEstado = $tipoPersonaEstado;
+    }
+    public function getTipoPersonaDescripcion() {
+        return $this->tipoPersonaDescripcion;
+    }
+    public function getTipoPersonaNombre() {
+        return $this->tipoPersonaNombre;
+    }
+    public function getTipoPersonaoEstado() {
+        return $this->tipoPersonaEstado;
+    }
   public function getPersonaId() {
         return $this->personaId;
     }
