@@ -130,7 +130,7 @@
                 </div>
             <div class="col-sm-3" style="margin-left:-1%">
                 
-                  <select  class="btn btn-warning" id="tipoVenta">
+                  <select  class="btn btn-warning btn-sm" id="tipoVenta">
                     <option>Cliente</option>
                     <option>Cajero</option>
                     <option>Administrador</option>
@@ -142,14 +142,14 @@
 
       <div class="form-group">
           
-        <div  style=margin-left:65% >
-          <button type="submit"  class="btn btn-warning" >Registrar  <i class="glyphicon glyphicon-ok"></i></button>
+        <div  style=margin-left:55% >
+          <button type="submit"  class="btn btn-warning btn-sm" >Registrar  <i class="glyphicon glyphicon-ok"></i></button>
       
-          <button type="submit" class="btn btn-warning" >Modificar  <i class="glyphicon glyphicon-ok"></i></button>
+          <button type="submit" class="btn btn-warning btn-sm" >Modificar  <i class="glyphicon glyphicon-ok"></i></button>
        
-          <button type="submit" class="btn btn-warning" >Eliminar  <i class="glyphicon glyphicon-ok"></i></button>
+          <button type="submit" class="btn btn-warning btn-sm" >Eliminar  <i class="glyphicon glyphicon-ok"></i></button>
        
-          <button type="submit" class="btn btn-warning" >Mostrar  <i class="glyphicon glyphicon-ok"></i></button>
+          <button type="submit" class="btn btn-warning btn-sm" >Mostrar  <i class="glyphicon glyphicon-ok"></i></button>
         </div>
       </div>
       </div>

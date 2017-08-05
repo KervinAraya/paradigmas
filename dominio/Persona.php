@@ -9,7 +9,6 @@ class Persona {
     private $personaTelefono;
     private $personaDireccion;
     private $personaCorreo;
-    private $tipoPersonaCedula;
     private $tipoPersonaEstado;
     private $tipoPersonaNombre;
     private $tipoPersonaDescripcion;
