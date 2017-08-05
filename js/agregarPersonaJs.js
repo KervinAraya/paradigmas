@@ -1,7 +1,10 @@
 
 function insertarPersona(){
+    alert("sss");
     $(document).ready(function(){
+        alert("ss");
         $.post('../business/agregarPersonaAction.php',{
+            
             accionPersona : 'insertar',
             personaId : document.getElementById("cedula").value,
             personaNombre : document.getElementById("apellido1").value,

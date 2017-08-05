@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <script src="../js/jquery-3.2.1.min.js"></script>
+
   <!-- CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-   <link rel="stylesheet" href="../css/menu.css" >
-   <link rel="stylesheet" href="../css/registroCliente.css" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <!-- JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+  <script src="../js/agregarPersonaJs.js"></script>
 
 </head>
-<body ">
+<body>
 
 
    
@@ -33,7 +35,7 @@
     <!-- Form Name -->
     
     <div class="datosClientes">
-          <form class="form-horizontal">
+          
           <fieldset>
 
             <!-- Form Name -->
@@ -149,7 +151,7 @@
       <div class="form-group">
           
         <div  style=margin-left:55% >
-            <button type="submit" onclick="insertarPersona();"  class="btn btn-warning btn-sm" >Registrar  <i class="glyphicon glyphicon-ok"></i></button>
+            <button  onclick="insertarPersona();"  class="btn btn-warning btn-sm" >Registrar  <i class="glyphicon glyphicon-ok"></i></button>
       
           <button type="submit" class="btn btn-warning btn-sm" >Modificar  <i class="glyphicon glyphicon-ok"></i></button>
        

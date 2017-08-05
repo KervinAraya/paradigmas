@@ -9,7 +9,7 @@ class Conexion {
     
     
     function Conexion(){
-        $this->server = "192.168.1.16";
+        $this->server = "192.168.1.3";
         $this->user = "progra";
         $this->password = "";
         $this->dbname = "DBtallermecanico";

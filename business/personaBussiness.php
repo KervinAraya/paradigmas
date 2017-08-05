@@ -2,18 +2,18 @@
 
 include '../data/agregarPersonaData.php';
 
-class personaBusiness {
+class personaBussiness {
 
     private $personaData;
 
-    public function personaBusiness() {
+    public function personaBussiness() {
         $this->personaData = new agregarPersonaData();
     }
 
     public function insertTBPersona($persona) {
         return $this->personaData->insertarPersona($persona);
     }
-
+/*
     public function updateTBPersona($persona) {
         return $this->personaData->actualizarPersona($persona);
     }
@@ -30,5 +30,5 @@ class personaBusiness {
     public function getByIdTBPersona($personaId) {
         return $this->personaData->getCedulaPersonas();
     }
-    
+    */
 }

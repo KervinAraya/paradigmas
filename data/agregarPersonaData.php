@@ -11,13 +11,13 @@
         
         function insertarPersona($persona){
             $insertar = $this->conexion->crearConexion()->query("INSERT INTO tbpersona VALUES("
-                    . "'".$this->persona->getPersonaId()."'"
-                    . "'".$this->persona->getPersonaNombre()."'"
-                    . "'".$this->persona->getPersonaApellido1()."'"
-                    . "'".$this->persona->getPersonaApellido2()."'"
-                    . "'".$this->persona->getPersonaTelefono()."'"
-                    . "'".$this->persona->getPersonaDireccion()."'"
-                    . "'".$this->persona->getPersonaCorreo()."')");
+                    . "'".$persona->getPersonaId()."'"
+                    . "'".$persona->getPersonaNombre()."'"
+                    . "'".$persona->getPersonaApellido1()."'"
+                    . "'".$persona->getPersonaApellido2()."'"
+                    . "'".$persona->getPersonaTelefono()."'"
+                    . "'".$persona->getPersonaDireccion()."'"
+                    . "'".$persona->getPersonaCorreo()."')");
             if($insertar == 1 && $tipoEmpleado == true){
                  $insertarTipoEmpleado = $this->conexion->crearConexion()->query("INSERT INTO tbtipopersona VALUES('".$persona->getPersonaId()."','".$persona->getTipoPersonaNombre()."','".$persona->getTipoPersonaDescripcion()."','".$persona->getTipoPersonaEstado()."')");
             }else{ 
