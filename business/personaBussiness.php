@@ -26,4 +26,9 @@ class personaBusiness {
         return $this->personaData->getTodasLasPersonas();
     }
     
+    
+    public function getByIdTBPersona($personaId) {
+        return $this->personaData->getCedulaPersonas();
+    }
+    
 }

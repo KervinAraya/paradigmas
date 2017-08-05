@@ -22,6 +22,27 @@
         header("Location:../view/agregarPersonaView.php?Error=Archivos en blanco"); 
     }
     
+    $actionPersona=$_POST['accionPersona'];
+    $personaData= new personaBusiness();
     
+    if($actionPersona=='insertar'){
+        $personaData->insertTBPersona($persona);
+    }
+    elseif($actionPersona=='consultar'){
+         $personaData->getAllTBPersona();
+    }
+    elseif($actionPersona=='consultarPorCedula'){
+         $personaData->getByIdTBPersona($personaId);
+    }
+     elseif($actionPersona=='actualizar'){
+        $personaData->updateTBPersona($persona);
+    }
+     elseif($actionPersona=='eliminar'){
+        $personaData->deleteTBPersona($personaId);
+    }
+    else{
+        header("Location:../view/agregarPersonaView.php?Error=No ha seleccionado una opcion viable"); 
+    }
+
             
 ?>
