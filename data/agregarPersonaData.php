@@ -25,6 +25,12 @@
             }
         }
         
+        function eliminarPersona($persona){
+            $desactivar = $this->conexion->crearConexion()->query("UPDATE tbtipopersona estadotipopersona SET ='false' WHERE cedulapersona=".$persona->getPersonaId()."");
+            if($desactivar != 1){
+                throw new Exception("Error al desactivar la persona");
+            }            
+        }
         
         
     }
