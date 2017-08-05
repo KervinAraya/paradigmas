@@ -19,7 +19,7 @@
                     . "'".$this->persona->getPersonaDireccion()."'"
                     . "'".$this->persona->getPersonaCorreo()."')");
             if($insertar == 1 && $tipoEmpleado == true){
-                 $insertarTipoEmpleado = $this->conexion->crearConexion()->query("");
+                 $insertarTipoEmpleado = $this->conexion->crearConexion()->query("INSERT INTO tbtipopersona VALUES('".$persona->getPersonaId()."','".$persona->getTipoPersonaNombre()."','".$persona->getTipoPersonaDescripcion()."','".$persona->getTipoPersonaEstado()."')");
             }else{ 
                 throw new Exception("Error al insertar la persona");
             }

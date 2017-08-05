@@ -49,15 +49,15 @@
                   <label  for="factura">Cédula:</label>  
                 </div>
                 <div class="col-sm-3">
-                  <input id="factura" name="factura" type="text" placeholder="" >
+                  <input id="cedula" name="cedula" type="text" placeholder="" >
                   
                 </div>
                
                 <div class="col-sm-2">
-                  <label  for="cedula" style="padding-left: 10%" >Nombre :</label>  
+                  <label  for="nombre" style="padding-left: 10%" >Nombre :</label>  
                 </div>
                  <div class="col-sm-3">
-                  <input id="cedula" name="cedula" style="padding-right: 10%" type="text" placeholder="" >
+                  <input id="nombre" name="nombre" style="padding-right: 10%" type="text" placeholder="" >
                   
                 </div>
                
@@ -67,18 +67,18 @@
           
               <div class="form-group">
                  <div class="col-sm-3">
-                  <label  for="factura">Primer Apellido:</label>  
+                  <label  for="apellido1">Primer Apellido:</label>  
                 </div>
                 <div class="col-sm-3">
-                  <input id="factura" name="factura" type="text" placeholder="" >
+                  <input id="apellido1" name="apellido1" type="text" placeholder="" >
                   
                 </div>
                
                 <div class="col-sm-2">
-                  <label  for="cedula" style="padding-left: 10%" >Segundo Apellido:</label>  
+                  <label  for="apellido2" style="padding-left: 10%" >Segundo Apellido:</label>  
                 </div>
                  <div class="col-sm-3">
-                  <input id="cedula" name="cedula" style="padding-right: 10%" type="text" placeholder="" >
+                  <input id="apellido2" name="apellido2" style="padding-right: 10%" type="text" placeholder="" >
                   
                 </div>
                
@@ -92,18 +92,18 @@
               <!-- Text input-->
               <div class="form-group">
                  <div class="col-sm-3">
-                  <label  for="factura">Teléfono:</label>  
+                  <label  for="telefono">Teléfono:</label>  
                 </div>
                 <div class="col-sm-3">
-                  <input id="factura" name="factura" type="text" placeholder="">
+                  <input id="telefono" name="telefono" type="text" placeholder="">
                   
                 </div>
                
                 <div class="col-sm-2">
-                  <label  for="cedula" style="padding-left: 10%" >Dirección :</label>  
+                  <label  for="direccion" style="padding-left: 10%" >Dirección :</label>  
                 </div>
                  <div class="col-sm-3">
-                  <input id="cedula" name="cedula" style="padding-right: 10%" type="text" placeholder="" >
+                  <input id="direccion" name="direccion" style="padding-right: 10%" type="text" placeholder="" >
                   
                 </div>
                
@@ -113,24 +113,29 @@
           
               <div class="form-group">
                  <div class="col-sm-3">
-                  <label  for="factura">Correo:</label>  
+                  <label  for="correo">Correo:</label>  
                 </div>
                 <div class="col-sm-3">
-                  <input id="factura" name="factura" type="text" placeholder="" >
+                  <input id="correo" name="correo" type="text" placeholder="" >
                   
                 </div>
-               
+                 <div class="col-sm-3">
+                  <label  for="descripcion">Descripcion:</label>  
+                </div>
+            <div class="col-sm-3" style="margin-left:-1%">
+                <input id="descripcion" name="descripcion" type="text" placeholder="" >
+            </div>
                 
                
               </div>
               <br>
             </div>
             <div class="col-sm-3">
-                  <label  for="factura">Tipo de Persona:</label>  
+                  <label  for="tipoPersona">Tipo de Persona:</label>  
                 </div>
             <div class="col-sm-3" style="margin-left:-1%">
                 
-                  <select  class="btn btn-warning btn-sm" id="tipoVenta">
+                  <select  class="btn btn-warning btn-sm" id="tipoPersona">
                     <option>Cliente</option>
                     <option>Cajero</option>
                     <option>Administrador</option>
@@ -139,11 +144,12 @@
                   <br>
                    <br>
                 </div>
+          
 
       <div class="form-group">
           
         <div  style=margin-left:55% >
-          <button type="submit"  class="btn btn-warning btn-sm" >Registrar  <i class="glyphicon glyphicon-ok"></i></button>
+            <button type="submit" onclick="insertarPersona();"  class="btn btn-warning btn-sm" >Registrar  <i class="glyphicon glyphicon-ok"></i></button>
       
           <button type="submit" class="btn btn-warning btn-sm" >Modificar  <i class="glyphicon glyphicon-ok"></i></button>
        

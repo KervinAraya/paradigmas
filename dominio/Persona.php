@@ -71,7 +71,7 @@ class Persona {
     public function getTipoPersonaNombre() {
         return $this->tipoPersonaNombre;
     }
-    public function getTipoPersonaoEstado() {
+    public function getTipoPersonaEstado() {
         return $this->tipoPersonaEstado;
     }
   public function getPersonaId() {
